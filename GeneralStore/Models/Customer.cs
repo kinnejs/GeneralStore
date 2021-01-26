@@ -18,7 +18,8 @@ namespace GeneralStore.Models
         public string LastName { get; set; }
 
         [Required]
-        public string FullName { get { return $"FirstName is: {FirstName}, LastName is {LastName}"; } }
-
+        public string FullName { get { return $"{FirstName} {LastName}"; } }
     }
+
+    
 }

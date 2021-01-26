@@ -20,7 +20,6 @@ namespace GeneralStore.Models
         [Required]
         public int NumberInInventory { get; set; }
 
-        [Required]
         public bool IsInStock { get { if (NumberInInventory > 0)
                 {
                     return true;
